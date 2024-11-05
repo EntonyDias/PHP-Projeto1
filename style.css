@@ -1,0 +1,19 @@
+html, body{
+   padding: 0%;
+   margin: 0;
+   background-color: aliceblue;
+}
+
+ul{
+   text-align: start;
+   list-style-type:decimal;
+   max-width: 180px;
+   max-height: auto;
+   min-width: 180px;
+   min-height: 180px;
+}
+
+li{
+   color: blueviolet;
+}
+
