@@ -1,0 +1,28 @@
+html, body{
+   padding: 0%;
+   margin: 0;
+   background-color: aliceblue;
+}
+
+ul{
+   display: flex;
+   text-align: start;
+   list-style-type:decimal;
+   max-width: 80%;
+   max-height: auto;
+   margin: auto;
+   overflow-wrap: break-word;
+   flex-wrap: wrap;
+}
+
+li{
+   color: blueviolet;
+   max-width: 330px;
+   max-height: auto;
+   min-width: 330px;
+   min-height: 330px;
+}
+
+img {
+   max-width: 300px;
+}

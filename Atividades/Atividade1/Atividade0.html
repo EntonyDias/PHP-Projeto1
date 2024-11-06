@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Atividade1</title>
+</head>
+
+<body><a href="../../index.php">Voltar</a>
+   <header>
+      
+      <section id="Links">
+         <a href="Home"></a>
+         <a href="Formulario"></a>
+         <a href="Sobre"></a>
+      </section>
+   </header>
+
+   <main>
+
+      <form action="processa_formulario.php" method="post">
+         <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+         <input type="number" name="idade" id="idade" placeholder="Insira sua idade" required>
+         <input type="number" name="altura" id="altura" placeholder="Insira sua altura" step="0.01">
+         <input type="number" name="peso" id="peso" step="0.01" placeholder="Insira seu peso">
+         <input type="submit" name="enviar" id="enviar">
+         <input type="reset" name="redefinir" id="redefinir">
+      </form>
+
+   </main>
+
+</body>
+
+</html>
