@@ -11,8 +11,8 @@
 <body>
    <header>
       <h3>Projetos</h3>
-      <h3>Exercicios de fixação</h3>
-      <h3>2024/11/04</h3>
+      <h3>Exercicios PHP</h3>
+      <h3>Desde 2024/11/04 até 2024/11/??</h3>
    </header>
    <main>
       <div class="container">
@@ -49,13 +49,13 @@
                <p>Exercicio</p>
                <img src="" alt="Pagina do 2º Exercicio">
                <p></p>
-               <a href="">Visitar</a>
+               <a href="./Exercicios/Exercicio2.php">Visitar</a>
             </li>
             <li>
                <p>Exercicio</p>
                <img src="" alt="Pagina do 3º Exercicio">
                <p></p>
-               <a href="">Visitar</a>
+               <a href="./Exercicios/Exercicio3.php">Visitar</a>
             </li>
          </ul>
          
@@ -65,7 +65,7 @@
                <p>Treino</p>
                <img src="./Treinos/images/treino1.png" alt="Pagina do 1º Treino">
                <p>Básico do básico de PHP</p>
-               <a href="./Treinos/treino1.php">Visitar</a>
+               <a href="./Treinos/Treino1.php">Visitar</a>
             </li>
             <li>
                <p>Treino</p>
