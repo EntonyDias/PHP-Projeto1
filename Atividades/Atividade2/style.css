@@ -1,0 +1,40 @@
+html, body{ margin: 0; padding: 0; background-color: mediumorchid;}
+
+header{color: orange; background-color: purple;  display: flex; text-align: center;}
+
+main{color: orange; background-color:mediumorchid; margin: 3%;}
+
+#titulo{
+   text-align: center;
+   margin: auto;
+   margin-top: 1%;
+   margin-bottom: 1%;
+}
+
+#rifa{
+   margin-left: 1%;
+   margin-top: 1%;
+   display: flex;
+   text-align: center;
+   border: solid;
+   border-radius: 3px;
+   border-width: 8px;
+   border-color: darkviolet;
+   max-width: 400px;
+   min-width: 400px;
+}
+
+#info{
+   min-width: 250px;
+   max-width: 250px;
+}
+
+#usu{
+   min-width: 150px;
+   max-width: 150px;
+   border-right: solid;
+   border-radius: 3px;
+   border-width: 3px;
+   border-color: darkviolet;
+   border-right-style: dashed;
+}

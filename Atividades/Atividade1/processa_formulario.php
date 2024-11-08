@@ -28,7 +28,7 @@ if (
 
    $dataNasc = $_POST['dataNasc'];
    //maneira de extrair uma parte da data
-   $anoNasc = date("y", strtotime($dataNasc));
+   $anoNasc = date("Y", strtotime($dataNasc));
    $mesNasc = date("m", strtotime($_POST['dataNasc']));
    $diaNasc = date("d", strtotime($_POST['dataNasc']));
 

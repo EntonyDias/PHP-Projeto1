@@ -17,7 +17,7 @@
    <main>
       <div class="container">
          <!--Lista de Atividades-->
-         <ul id="listaExercicios">
+         <ul id="listaAtividades">
             <li>
                <p>Atividade</p>
                <img src="" alt="Pagina da 1ª Atividade">
@@ -28,7 +28,7 @@
                <p>Atividade</p>
                <img src="" alt="Pagina da 2ª Atividade">
                <p></p>
-               <a href="">Visitar</a>
+               <a href="./Atividades/Atividade2/Atividade2.php">Visitar</a>
             </li>
             <li>
                <p>Atividade</p>
@@ -71,7 +71,7 @@
                <p>Treino</p>
                <img src="" alt="Pagina do 2º Treino">
                <p></p>
-               <a href="">Visitar</a>
+               <a href="./Treinos/Treino2.php">Visitar</a>
             </li>
             <li>
                <p>Treino</p>
