@@ -7,7 +7,7 @@
    <title>Exercicio3</title>
 </head>
 
-<body>
+<body> <a href="../../index.php">Voltar</a><br>
    <h1>Calculadora de Produtos</h1>
    <form action="./script.php" method="POST">
       <label for="produto">Informe o Produto</label><br>

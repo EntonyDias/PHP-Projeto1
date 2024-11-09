@@ -7,7 +7,7 @@
    <title>Exercicio2</title>
 </head>
 
-<body>
+<body><a href="../../index.php">Voltar</a><br>
    <h1>Deixe seu Feedback</h1>
    <form method="POST">
       <label for="mensagem">
@@ -33,9 +33,6 @@
       else if(empty($_POST["mensagem"])){
          echo"<p><strong>O campo esta vazio!</strong><br>Envie uma mensagem usando o formulário acima!</p>";
       }
-
-      $rota = "../index.php";
-      echo "<a href=".$rota.">Voltar</a><br>";
    ?>
 
 </body>

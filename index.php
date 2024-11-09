@@ -43,19 +43,25 @@
                <p>Exercicio</p>
                <img src="./Exercicios/images/Exercicio1.png" alt="Pagina do 1º Exercicio">
                <p>Aprendendo sobre os Forms</p>
-               <a href="./Exercicios/Exercicio1.php">Visitar</a>
+               <a href="./Exercicios/Exercicio1/Exercicio1.php">Visitar</a>
             </li>
             <li>
                <p>Exercicio</p>
                <img src="" alt="Pagina do 2º Exercicio">
                <p></p>
-               <a href="./Exercicios/Exercicio2.php">Visitar</a>
+               <a href="./Exercicios/Exercicio2/Exercicio2.php">Visitar</a>
             </li>
             <li>
                <p>Exercicio</p>
                <img src="" alt="Pagina do 3º Exercicio">
                <p></p>
-               <a href="./Exercicios/Exercicio3.php">Visitar</a>
+               <a href="./Exercicios/Exercicio3/Exercicio3.php">Visitar</a>
+            </li>
+            <li>
+               <p>Exercicio</p>
+               <img src="" alt="Pagina do 3º Exercicio">
+               <p></p>
+               <a href="./Exercicios/Exercicio4/Exercicio4.php">Visitar</a>
             </li>
          </ul>
          

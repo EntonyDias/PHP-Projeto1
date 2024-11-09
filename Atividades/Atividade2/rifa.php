@@ -7,14 +7,30 @@
    <title>Rifas</title>
    <link rel="stylesheet" href="style.css">
 </head>
-<a href="../../index.php">← Voltar</a>
+<a href="./Atividade2.php">← Voltar</a>
 
 <body>
+
    <?PHP
+   if ($_SERVER['REQUEST_METHOD'] === 'POST' &&
+   isset($_POST["premio"]) && isset($_POST["quant"]) &&
+   isset($_POST["data"]) && isset($_POST["valor"]) &&
+
+   !empty($_POST["premio"]) && !empty($_POST["quant"]) &&
+   !empty($_POST["data"]) && !empty($_POST["valor"])
+   ) {
+
    $premio = $_POST['premio'];
    $data = $_POST['data'];
    $valor = $_POST['valor'];
    $quant = $_POST['quant'];
+   $image = $_POST['imagem'];
+
+   $anoData = date("Y", strtotime($data));
+   $mesData = date("m", strtotime($_POST['data']));
+   $diaData = date("d", strtotime($_POST['data']));
+
+   echo "$image";
 
    echo "<main style='
       margin: auto; display:flex; overflow-wrap: break-word; flex-wrap: wrap; color: black;'>";
@@ -33,17 +49,15 @@
       <div id='info'>
          <h3>Ação entre amigos</h3>
          <p>Prêmio: $premio</p>
-         <p>Valor: $valor</p>
-         <p>Data: $data</p>
+         <p>Valor: ".sprintf("%.2f",$valor)."</p>
+         <p>Data: $diaData/$mesData/$anoData</p>
          <p>Nº ".sprintf("%08d",$i)."</p>
       </div>
    </div> ";
    }
 
-   
-
    echo "</main>";
-
+   } else { echo "Algo não foi preenchido corretamente"; }
    ?>
 </body>
 

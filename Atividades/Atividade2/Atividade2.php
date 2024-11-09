@@ -21,6 +21,11 @@
          <label for="premio">Premio</label>
          <input type="text" name="premio" id="premio" maxlength="30" placeholder="Nome do prêmio" required>
 
+         <!--Imagem Talvez-->
+         <br>
+         <label for="imagem">Imagem</label>
+         <input type="file" name="imagem" id="imagem" width="48" height="48">
+
          <!--data-->
          <br>
          <label for="data">Data</label>
@@ -29,7 +34,7 @@
          <!--valor-->
          <br>
          <label for="valor">Valor</label>
-         <input type="number" name="valor" id="valor" step="1.0" required>
+         <input type="number" name="valor" id="valor" step="0.01" required>
 
          <!--quantidade-->
          <br>
