@@ -43,7 +43,7 @@ function listarUsuarios() {
    foreach ($usuarios as $index => $user) {
       echo "<li>".
       htmlspecialchars($user["usuario"] . " " . $user["senha"]). " "
-      . "<a href='Exercicio5.php ? excluir=" . $index . "'>Excluir</a> | "
+      . "<a href='cadastro.php ? excluir=" . $index . "'>Excluir</a> | "
       . "<a href='alterar.php ? editar=" . $index . "'>Alterar</a>";
    ;}
    echo "</UL>";
@@ -63,11 +63,11 @@ function excluirUsuario($index)
 }
 
 //alterar usuarios
-function alterraUsuario($index, $novoUsuario, $novaSenha)
+function alterarUsuario($index, $novoUsuario, $novaSenha)
 {
    $usuarios = carregarUsuarios();
    if (isset($usuarios[$index])) {
-      $usuarios[$index] = ["usuarios" => $novoUsuario, "senha", $novaSenha];
+      $usuarios[$index] = ["usuario"=>$novoUsuario, "senha"=>$novaSenha];
       file_put_contents("usuarios.txt", "");
       foreach ($usuarios as $user) {
          salvarUsuario($user["usuario"], $user["senha"]);

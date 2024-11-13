@@ -5,7 +5,7 @@ if (isset($_GET["editar"])) {
    $usuarios = carregarUsuarios();
    if (isset($usuarios[$index])) {
       $usuarioAtual = $usuarios[$index]["usuario"];
-      $senhaAtual = $senha[$index]["senha"];
+      $senhaAtual = $usuarios[$index]["senha"];
    } else {
       echo "Usuário não encontrado!";
       exit;
@@ -13,20 +13,16 @@ if (isset($_GET["editar"])) {
 }
 
 //processa alteração de usuario
-if (
-   $_SERVER["REQUEST_METHOD"] == "POST"
-   //filtro
-   && isset($_POST["usuario"])
-   && isset($_POST["senha"])
-   && !empty($_POST["usuario"])
-   && !empty($_POST["senha"])
-) {
+if (  $_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["usuario"]) 
+      && isset($_POST["senha"]) 
+     ) {
    //recebe
    $novoUsuario = $_POST["usuario"];
    $novaSenha = $_POST["senha"];
+   var_dump($novoUsuario);
    //altera
-   alterraUsuario($index, $novoUsuario, $novaSenha);
-   header("Location: Exercicio5.php");
+   alterarUsuario($index, $novoUsuario, $novaSenha);
+   header("Location: cadastro.php");
    exit;
 }
 ?>

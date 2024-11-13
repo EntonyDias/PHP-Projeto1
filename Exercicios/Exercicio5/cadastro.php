@@ -24,7 +24,7 @@ if (
 if (isset($_GET["excluir"])) {
    $index = $_GET["excluir"];
    excluirUsuario($index);
-   header("Location:Exercicio5.php");
+   header("Location:cadastro.php");
    exit;
 }
 ?>
@@ -40,7 +40,7 @@ if (isset($_GET["excluir"])) {
 
 <body>
    <h2>Cadastre um novo usuário</h2>
-   <form action="Exercicio5.php" method="post">
+   <form action="cadastro.php" method="post">
 
       <!--usu-->
       <input type="text" name="usuario" id="usuario" placeholder="usuario" required>
