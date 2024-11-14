@@ -6,16 +6,6 @@
 - nativamente: lista agendas
 - listaUsuarios
 
-- **login.php**:
-- Index
-- Cadastro Usuarios
-
-**funcoes.php**:
-- Funções gerais
-
-**logout.php**:
-- chamado no index, leva ao login novamente
-
 ## pasta de usuarios
 
 **cadastroUsuario.php**:
@@ -27,9 +17,6 @@
 
 **alterarUsuario.php**:
 - listaUsuarios
-
-**usuarios.txt**:
-- "banco de dados"
 
 ## pasta agenda
 
