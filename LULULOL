@@ -1,1 +1,45 @@
-foto
+## Pasta Raiz
+
+**index.php**:
+- Logout
+- nativamente: Cria agendas (no cantinho)
+- nativamente: lista agendas
+- listaUsuarios
+
+- **login.php**:
+- Index
+- Cadastro Usuarios
+
+**funcoes.php**:
+- Funções gerais
+
+**logout.php**:
+- chamado no index, leva ao login novamente
+
+## pasta de usuarios
+
+**cadastroUsuario.php**:
+- Login
+
+**listaUsuarios**:
+- Index
+- alterarUsuarios
+
+**alterarUsuario.php**:
+- listaUsuarios
+
+**usuarios.txt**:
+- "banco de dados"
+
+## pasta agenda
+
+**agenda.php**:
+- nativamente: lista pessoas da agenda
+- alterarAgenda
+- index
+
+**alterarAgenda.php**:
+- agenda
+
+**agendas - Pasta**
+- "bancos de dados"
