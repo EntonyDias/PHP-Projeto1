@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Atividade1</title>
+</head>
+
+<body><a href="../../index.php">Voltar</a>
+   <header>
+
+      <section id="Links">
+         <a href="Home"></a>
+         <a href="Formulario"></a>
+         <a href="Sobre"></a>
+      </section>
+   </header>
+
+   <main>
+
+      <form action="processa_formulario.php" method="post">
+         <!--Nome-->
+         <label for="nome">Nome Completo:</label>
+         <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+         <br>
+
+         <!--DataNasc-->
+         <label for="dataNasc">Data de nascimento</label>
+         <input type="date" name="dataNasc" id="dataNasc" required>
+
+         <!--Idade
+         <label for="idade">Idade:</label>
+         <input type="number" name="idade" id="idade" placeholder="Insira sua idade" required> -->
+         <br>
+
+         <!--Altura-->
+         <label for="altura">Altura:</label>
+         <input type="number" name="altura" id="altura" placeholder="Insira sua altura" step="0.01" required>
+
+         <!--Peso-->
+         <label for="peso">Peso:</label>
+         <input type="number" name="peso" id="peso" step="0.01" placeholder="Insira seu peso" required>
+         <br>
+
+         <!--Sexo-->
+         <p style="margin: 0; padding: 0;">Sexo:</p>
+         <label for="fema">Feminino </label>
+         <input type="radio" name="sexo" id="fema" value="Feminino" required>
+         <label for="male">Masculino</label>
+         <input type="radio" name="sexo" id="male" value="Masculino" required>
+         <br>
+
+         <!--Botões-->
+         <input type="submit" name="enviar" id="Avaliar">
+         <input type="reset" name="redefinir" id="Limpar">
+      </form>
+
+   </main>
+
+</body>
+
+</html>
