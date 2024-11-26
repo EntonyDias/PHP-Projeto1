@@ -1,0 +1,51 @@
+Ajustar o lobby:
+
+# Links de entrada
+# Links de saidas
+# Fotos referenciais
+
+- PROJETO CRUD:
+  # Criar a classe noticias (listar tudo | [pra que? | {verificar | <porque não sei para o que usaria>}])
+
+  *Padronização
+    - Header = logo, nome 
+    - Footer = infos diversas, *links diversos
+
+  *MELHORIAS
+  - Deletar a imagem antiga quando editar uma noticia
+  - Arrumar os nomes dos arquivos
+  - Ajuste "automatico" no caminho do config
+  - Organizar lugares permitidos só com login
+  - Styles (Header, Footer, Estilização Individual)
+  - Botões de voltar
+  - Tratamento de campos
+
+  Index:
+  !Apertado
+  *PaginaPrincipal
+    - Main = mostra as noticias
+    - Header = p, *login
+    - Footer = p
+
+  Login:
+  !Minimalista
+
+  Gerenciador:
+  &<<Logado>>
+  - Header = p, *index
+  - Footer = p
+
+  Cadastro:
+    - Header = p, *gerenciar
+    - Main = p
+    
+  Alterar:
+  - Header = p, *gerenciar
+  - Main = p
+    { Mini titulo
+      Campos = titulo, autor, data, noticia, imagem
+      Botão = Salvar     
+    }
+
+  
+

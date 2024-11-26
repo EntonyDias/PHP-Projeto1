@@ -1,0 +1,146 @@
+html, body{
+   margin: 0; padding: 0%; background-color: gray; color: purple;
+   text-align: center;
+}
+
+h1{
+   color: white;
+   margin: 0;
+}
+
+h2{
+   color: white;
+   margin: 0;
+}
+
+h3{
+   color: white;
+   margin: 0;
+}
+
+a {
+   color: purple;
+}
+
+#ListaUsuarios{
+   display: flex;
+   text-align: start;
+   list-style-type: none;
+   max-width: 80%;
+   max-height: auto;
+   margin: auto;
+   margin-top: 3%;
+   overflow-wrap: break-word;
+   flex-wrap: wrap;
+   gap: 15px;
+}
+
+.Linhas{
+   list-style-type: none;
+   max-height: auto;
+   margin-top: 3%;
+   padding: 0px;
+   border: 3px;
+   border-style: solid;
+   border-color: purple;
+   min-width: 200px;
+   max-width: 200px;
+   padding-bottom: 0;
+   overflow-wrap: break-word;
+   flex-wrap: wrap;
+}
+
+#linhaAcao{
+   min-width: 100px;
+   max-width: 100px;
+}
+
+#hande{
+   border-bottom-style: solid;
+   border-color: purple;
+}
+
+.lista{
+   border-bottom-style: solid;
+   border-color: purple;
+   max-height: 60px;
+   min-height: 60px;
+   text-align: center;
+   overflow-wrap: break-word;
+   flex-wrap: wrap;
+   overflow-y: hidden;
+}
+
+
+main {
+   display: flex;
+   justify-content: center;
+}
+
+#listarAgenda{
+   display: flex;
+   padding: 10px;
+   margin-top: 3%;
+   text-align: start;
+   list-style-type:none;
+   max-width: 80%;
+   max-height: auto;
+   margin: auto;
+   overflow-wrap: break-word;
+   flex-wrap: wrap;
+   gap: 15px;
+}
+
+#lista{
+   color: purple;
+   max-width: 180px;
+   max-height: auto;
+   min-width: 180px;
+}
+
+li{
+   color: purple;
+}
+
+#botoesIndex{
+   display: flex;
+   gap: 3px;
+   justify-content: center;
+}
+
+#lista{
+   border-radius: 3px;
+   border-style: solid;
+   text-align: center;
+}
+
+#listaUsuarios{
+   max-width: 180px;
+   max-height: auto;
+   min-width: 180px;
+   min-height: 88px;
+   border-radius: 8px;
+   border-style: solid;
+   padding: 8px;
+   min-height: auto;
+}
+
+#listaAgenda{
+   border-radius: 8px;
+   border-style: solid;
+   padding: 8px;
+   min-height: auto;
+}
+
+#botaoLogout{
+   background-color: black; color:white;
+   border-color:blueviolet;
+}
+
+#gryd{
+   display: flex;
+   justify-content: center;
+   gap: 3px;
+   margin-bottom: 10px;
+}
+
