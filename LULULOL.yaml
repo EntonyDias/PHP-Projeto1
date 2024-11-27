@@ -8,44 +8,30 @@ Ajustar o lobby:
   # Criar a classe noticias (listar tudo | [pra que? | {verificar | <porque não sei para o que usaria>}])
 
   *Padronização
-    - Header = logo, nome 
-    - Footer = infos diversas, *links diversos
+    
 
   *MELHORIAS
-  - Deletar a imagem antiga quando editar uma noticia
-  - Arrumar os nomes dos arquivos
-  - Ajuste "automatico" no caminho do config
-  - Organizar lugares permitidos só com login
-  - Styles (Header, Footer, Estilização Individual)
-  - Botões de voltar
-  - Tratamento de campos
+  - Styles:
+    [Index, Login, Gerenciar, Lista, Registrar, Editar, Portal, Nova, Alterar]
+    Header = logo, nome 
+    Footer = infos diversas, *links diversos
+    Estilização Individual
+    Porte Mobile
+    READ.ME
+    Comentarios e organização nos códigos
 
-  Index:
-  !Apertado
-  *PaginaPrincipal
-    - Main = mostra as noticias
-    - Header = p, *login
-    - Footer = p
+_____________________________________________________
+!PROJETO !FINAL
 
-  Login:
-  !Minimalista
+Maets Store:
 
-  Gerenciador:
-  &<<Logado>>
-  - Header = p, *index
-  - Footer = p
+CRUD
 
-  Cadastro:
-    - Header = p, *gerenciar
-    - Main = p
-    
-  Alterar:
-  - Header = p, *gerenciar
-  - Main = p
-    { Mini titulo
-      Campos = titulo, autor, data, noticia, imagem
-      Botão = Salvar     
-    }
-
-  
-
+Adminitradores
+Usuarios
+Distribuidora
+Jogos
+Carrinho
+Biblioteca
+=====================
+Eventos - promoçoes

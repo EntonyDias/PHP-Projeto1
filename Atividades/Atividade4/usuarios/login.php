@@ -29,11 +29,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>A U T E N T I C A Ç Ã O</title>
+   <link rel="stylesheet" href="../style.css">
 </head>
 
 
 <body>
 
+    <h1>Login</h1>
+    
+    <a href="../index.php">Voltar</a>
 
     <div class="container">
 
@@ -51,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <br><br>
                 <input type="submit" name="login" value="Login">
             </form>
-            <p>Não tem uma conta? <a href="./registrar.php">Registre-se aqui</a></p>
+            <p>Não tem uma conta? <a href="./registrarUsuario.php">Registre-se aqui</a></p>
             <div class="mensagem">
                 <?php if (isset($mensagem_erro)) echo '<p>' . $mensagem_erro . '</p>'; ?>
             </div>

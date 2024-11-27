@@ -1,5 +1,9 @@
 <?PHP
 session_start();
+   if (!isset($_SESSION['usuario_id'])) {
+       echo "Não esta Logado!";
+   }
+
 include_once './config/config.php';
 include_once './classes/Noticia.php';
 include_once './classes/Usuario.php';
@@ -16,11 +20,13 @@ $dados_noticia = $noticia->leitura();
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Noticias</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <header>
 
       <a href="./usuarios/login.php">Login</a>
+      <a href="./logout.php">Logout</a>
 
    </header>
    <main>

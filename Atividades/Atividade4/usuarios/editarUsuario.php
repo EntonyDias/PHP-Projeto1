@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $fone = $_POST['fone'];
     $email = $_POST['email'];
     $usuario->atualizar($id, $nome, $sexo, $fone, $email);
-    header('Location: usersCad.php');
+    header('Location: listaUsuarios.php');
     exit();
 }
 if (isset($_GET['id'])) {
@@ -30,9 +30,13 @@ if (isset($_GET['id'])) {
 <head>
     <meta charset="UTF-8">
     <title>Editar Usuário</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <h1>Editar Usuário</h1>
+    
+    <a href="./listaUsuarios.php">Voltar</a>
+    
     <form method="POST">
         <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
         <label for="nome">Nome:</label>

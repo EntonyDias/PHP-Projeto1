@@ -28,6 +28,7 @@ echo "$nome_usuario, queremos agradecer por manter o portal sempre atualizado";
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Portal</title>
+   <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -58,8 +59,8 @@ echo "$nome_usuario, queremos agradecer por manter o portal sempre atualizado";
             <td><?PHP echo $row['data'] ?></td>
             <td><?PHP echo "<img src='../uploads/".$row['foto']."' alt='Foto da noticia:".$row['titulo']. "'>"  ?></td>
             <td>
-               <a href="alterar.php?id=<?php echo $row['id']; ?>">Alterar</a>
-               <a href="excluir.php?id=<?php echo $row['id']; ?>">Excluir</a>
+               <a href="alterarNoticia.php?id=<?php echo $row['id']; ?>">Alterar</a>
+               <a href="excluirNoticia.php?id=<?php echo $row['id']; ?>">Excluir</a>
             </td>
          </tr>
       <?PHP endwhile; ?>         
