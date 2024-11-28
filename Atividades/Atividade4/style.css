@@ -1,9 +1,39 @@
-*{margin: 0; padding: 0; background-color: gray; color: purple;}
+*{margin: 0; padding: 0; color: purple;}
 
-body, main{
-   
+html, body{
+   background-color: gray;
+}
+
+main {
+   text-align: center;
+   justify-content: center;
+
 }
 
 header {
-
+   display: flex;
+   background-color: black;
+   padding: 8px;
+   justify-content:space-evenly;
+   margin-bottom: 8px;
 }
+
+ 
+#logout{
+   right: 0;
+   background-color: black;
+   }
+
+   #login{
+   top: 0;
+   left: 0;
+   float: inline-start;
+   background-color: black;
+} 
+
+
+a{
+   text-decoration: none;
+   background-color: black;
+}
+

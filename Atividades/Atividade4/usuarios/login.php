@@ -25,44 +25,92 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>A U T E N T I C A Ç Ã O</title>
-   <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../Style.css">
 </head>
 
 
 <body>
 
-    <h1>Login</h1>
-    
-    <a href="../index.php">Voltar</a>
+    <header style="justify-content: center;">
+        <h1>Login</h1>
 
+        <a style="left:0;position:fixed;font-size:large" href="../index.php">Cancelar</a>
+    </header>
     <div class="container">
 
-
-        <div class="box">
-            <h1>A U T E N T I C A Ç Ã O</h1>
-
-
+        <div class="box"><br><br><br><br>
             <form method="POST">
-                <label for="email">Email:</label>
-                <input type="email" name="email" required>
+
+                <div id="ac">
+                    <label for="email">Email: </label><br>
+                    <input type="email" name="email" value="Email" required>
+                </div><br><br>
+                <div id="ac">
+                    <label for="senha">Senha: </label><br>
+                    <input type="password" name="senha" value="Senha" required>
+                </div>
                 <br><br>
-                <label for="senha">Senha:</label>
-                <input type="password" name="senha" required>
-                <br><br>
-                <input type="submit" name="login" value="Login">
+
+                <div id="ac">
+                    <input id="ad" type="submit" name="login" value="Login">
+                </div>
             </form>
-            <p>Não tem uma conta? <a href="./registrarUsuario.php">Registre-se aqui</a></p>
+
             <div class="mensagem">
-                <?php if (isset($mensagem_erro)) echo '<p>' . $mensagem_erro . '</p>'; ?>
+                <?php if (isset($mensagem_erro)) echo "<p id='ac'>". $mensagem_erro . "</p>"; ?>
             </div>
-        </div>
-
-
+        </div><br><br>
+        <p id="ac">Não tem uma conta? <a id="ae" href="./registrarUsuario.php">Registre-se aqui</a></p>
+    </div>
 </body>
 
+<style>
+    header {
+        justify-content: space-between;
+    }
+
+    .container {
+        max-width: 80%;
+        text-align: start;
+        max-height: auto;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .box{
+        justify-content: center;
+    }
+
+    #ac {
+        justify-content: center;  
+        text-align: center;  
+    }
+
+    #ad{
+        border: 3px solid;
+        display: inline-block;
+        min-width: 180px;
+        min-height: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #ae{
+        background-color: gray;
+        color: magenta;
+    }
+
+    .mensagem{
+        justify-content: center;
+        display: flex;
+        gap: 8px;
+    }
+
+</style>
 
 </html>

@@ -27,6 +27,13 @@ class Noticia {
       return $stmt;
    }
 
+   public function leituraData(){
+      $query = "SELECT * FROM " . $this->table_name . " ORDER BY data ASC";
+      $stmt = $this->conn->prepare($query);
+      $stmt->execute();
+      return $stmt;
+   }
+
    public function leituraID($id){
       $query = "SELECT * FROM " . $this->table_name . " WHERE id = ?";
       $stmt = $this->conn->prepare($query);
