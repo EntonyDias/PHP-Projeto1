@@ -20,14 +20,14 @@ if (!isset($_SESSION['usuario_id'])) {
    <header>
 
       <div>
-         <a href="./index.php">Noticias</a>
+         <a id="af" href="./index.php">Noticias</a>
       </div>
 
       <div id="logout">
          <?php if (!isset($_SESSION['usuario_id'])) {
             echo "Você não deveria estar aqui!!!";
          } else {
-            echo "<a href='./logout.php'>Logout</a>";
+            echo "<a id='af' href='./logout.php'>Logout</a>";
          } ?>
       </div>
 
@@ -58,7 +58,16 @@ if (!isset($_SESSION['usuario_id'])) {
    @media (max-width: 600px) {
    header{
    justify-content: space-between;
-}}
+   }
+   #af {
+      border: 3px solid;
+      display: inline-block;
+      min-width: 130px;
+      min-height: 20px;
+      justify-content: center;
+      text-align: center;
+   }
+}
 </style>
 
 </html>

@@ -43,8 +43,7 @@ if (!isset($_SESSION['usuario_id'])) {
 
          $noticiaObjeto = new Noticia($db);
          $noticiaObjeto->salvarNoticia ($titulo, $autor,$data_publicacao, $noticia, $nomeImagem);
-         echo "Noticia salva com sucesso!";
-         echo "<br><a href='portal.php'>Voltar</a>";
+         header('Location: portal.php');
       }
    }
 ?>

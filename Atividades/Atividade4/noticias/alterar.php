@@ -17,8 +17,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $dados_noticia = $noticia->leituraID($id);
     $data_publicacao = $_POST['dataRepublicacao'];
     $conteudo = $_POST['conteudo'];
-    $imagem = $_FILES['imagem'];  
-    $nomeImagem = "";
+    $imagem = $_FILES['imagem'];
+    $autor = $_POST['autor'];
+    $nomeImagem = "aaa";
 
       if ($imagem['error']===UPLOAD_ERR_OK){
          $extensao = strtolower(pathinfo($imagem['name'], PATHINFO_EXTENSION));
@@ -48,19 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       } if (unlink("../uploads/".$dados_noticia['foto'])){
       } else {$nomeImagem = $dados_noticia['foto'];}
 
-    $noticia->alterar($id, $titulo, $dados_noticia['autor'], $data_publicacao, $conteudo, $nomeImagem);
-    header('Location: alterarNoticia.php');
+    $noticia->alterar($id, $titulo, $autor, $data_publicacao, $conteudo, $nomeImagem);
+    header('Location: portal.php');
     exit();
 }
-?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Alterar</title>
-</head>
-<body>
-   <button>Alterado com sucesso</button>
-</body>
-</html>

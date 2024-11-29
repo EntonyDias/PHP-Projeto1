@@ -4,19 +4,6 @@
 # Links de saidas
 # Fotos referenciais
 # Style
-
-!PROJETO !CRUD:
-
-  #MELHORIAS
-  - Styles:
-    [Lista, Registrar, Editar, Portal, Nova, Alterar]
-    Footer = infos diversas, *links diversos
-    Estilização Individual
-    Porte Mobile
-  
-  - READ.ME
-  - Comentarios e organização nos códigos:
-
 _____________________________________________________
 !PROJETO !FINAL
 

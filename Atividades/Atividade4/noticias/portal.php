@@ -17,7 +17,7 @@ $nome_usuario = $dados_usuario['nome'];
 
 $dados_noticia = $noticia->leitura();
 
-echo "$nome_usuario, queremos agradecer por manter o portal sempre atualizado";
+
 
 ?>
 
@@ -32,12 +32,17 @@ echo "$nome_usuario, queremos agradecer por manter o portal sempre atualizado";
 </head>
 
 <body>
-   <header></header>
-   <main>
-
+   <header>
+      
+      <?php echo "<p>$nome_usuario, agradecemos por atualizar o portal</p>";?>
+      <div id="links">
       <a href="novaNoticia.php">Adicionar Noticia</a>
       <a href="../gerenciar.php">Voltar</a>
-      <a href="../logout.php">Logout</a>
+      <a href="../logout.php">Logout</a></header>
+      </div>
+   <main>
+
+      
 
       <table border='1'>
          <tr>
@@ -59,8 +64,8 @@ echo "$nome_usuario, queremos agradecer por manter o portal sempre atualizado";
             <td><?PHP echo $row['data'] ?></td>
             <td><?PHP echo "<img src='../uploads/".$row['foto']."' alt='Foto da noticia:".$row['titulo']. "'>"  ?></td>
             <td>
-               <a href="alterarNoticia.php?id=<?php echo $row['id']; ?>">Alterar</a>
-               <a href="excluirNoticia.php?id=<?php echo $row['id']; ?>">Excluir</a>
+               <a id="ag" href="alterarNoticia.php?id=<?php echo $row['id']; ?>">Alterar</a>
+               <a id="ag" href="excluirNoticia.php?id=<?php echo $row['id']; ?>">Excluir</a>
             </td>
          </tr>
       <?PHP endwhile; ?>         
@@ -75,6 +80,59 @@ echo "$nome_usuario, queremos agradecer por manter o portal sempre atualizado";
    img{
       width: 88px;
    }
+
+   * {
+        margin: 0;
+        padding: 0;
+        color: purple;
+    }
+
+    main {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    header {
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        padding-bottom: 10px;
+        margin-bottom: 8px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    a{
+      border: 3px solid;
+      display: inline-block;
+      min-width: 180px;
+      min-height: 20px;
+      justify-content: center;
+      text-align: center;
+   }
+
+   #ag{
+    border: 3px solid;
+      display: inline-block;
+      min-width: 80px;
+      min-height: 20px;
+      justify-content: center;
+      text-align: center;
+   }
+
+    #links{
+        background-color: black;
+        justify-content: center;
+        text-align: center;
+        padding: 8px;
+    }
+
+    table{
+        border-color: purple;
+    }
+
+
 </style>
 
 </html>

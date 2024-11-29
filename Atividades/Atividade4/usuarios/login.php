@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <header style="justify-content: center;">
         <h1>Login</h1>
 
-        <a style="left:0;position:fixed;font-size:large" href="../index.php">Cancelar</a>
+        <a id="af" href="../index.php">Cancelar</a>
     </header>
     <div class="container">
 
@@ -48,11 +48,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <div id="ac">
                     <label for="email">Email: </label><br>
-                    <input type="email" name="email" value="Email" required>
+                    <input type="email" name="email" placeholder="Email" required>
                 </div><br><br>
                 <div id="ac">
                     <label for="senha">Senha: </label><br>
-                    <input type="password" name="senha" value="Senha" required>
+                    <input type="password" name="senha" placeholder="Senha" required>
                 </div>
                 <br><br>
 
@@ -110,6 +110,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         display: flex;
         gap: 8px;
     }
+
+    a{
+      border: 3px solid;
+      display: inline-block;
+      min-width: 80px;
+      min-height: 20px;
+      justify-content: center;
+      text-align: center;
+   }
+
+   #af{
+        top: 5px;
+        left: 5px;
+        border: 3px solid;
+        display: inline-block;
+        min-width: 60px;
+        min-height: 20px;
+        justify-content: center;
+        text-align: center;
+        position:absolute;
+        font-size:large;
+    }
+
 
 </style>
 
